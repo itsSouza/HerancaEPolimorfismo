@@ -1,0 +1,39 @@
+package entidade;
+
+public class ProdutoImportado extends Produto {
+
+	private Double taxa;
+
+	
+	public ProdutoImportado() {
+		super();
+	}
+	
+	public ProdutoImportado(String nome, Double preco, Double taxa) {
+		super(nome, preco);
+		this.taxa = taxa;
+	}
+
+	public Double getTaxa() {
+		return taxa;
+	}
+
+	public void setTaxa(Double taxa) {
+		this.taxa = taxa;
+	}
+	
+	
+	@Override
+	public String etiqueta() {
+		
+	      return nome + " $ " + String.format("%.2f", valorTotal()) + "(Taxa de importação: $ " + String.format("%.2f", taxa) + ")";
+	}
+	
+	public double valorTotal() {
+		return preco + taxa;
+	}
+	
+	
+	
+	
+}

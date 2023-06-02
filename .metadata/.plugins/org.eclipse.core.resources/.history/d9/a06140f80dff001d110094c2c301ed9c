@@ -1,0 +1,41 @@
+package entidades;
+
+public class PessoaFisica extends Contribuintes {
+
+	
+	private Double gastoSaude;
+	
+	
+	public PessoaFisica() {
+		super();
+	}
+	
+	
+
+	public PessoaFisica(String nome, Double rendaAno, Double gastoSaude) {
+		super(nome, rendaAno);
+		this.gastoSaude = gastoSaude;
+	}
+
+
+
+
+
+	public Double getGastoSaude() {
+		return gastoSaude;
+	}
+
+
+
+	public void setGastoSaude(Double gastoSaude) {
+		this.gastoSaude = gastoSaude;
+	}
+
+
+
+	@Override
+	public Double taxa() {
+		return if(get.)
+	}
+
+}

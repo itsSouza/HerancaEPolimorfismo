@@ -1,0 +1,18 @@
+package aplicacao;
+
+import entidade.Produto;
+import entidade.ProdutoImportado;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		
+		Produto p = new ProdutoImportado("TV", 1000.00, 20.00);
+		
+		
+		System.out.println(p.etiqueta());
+
+	}
+
+}
